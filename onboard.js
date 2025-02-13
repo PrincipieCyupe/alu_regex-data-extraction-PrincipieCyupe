@@ -1,3 +1,5 @@
+//The creation of an object that will be later changed to a string by forEach(item =>...) for match() module to work through them
+
 let str = {
     "Email addresses" : ["user@example.com", "firstname.lastname@company.co.uk"],
     "URLs" : ["https://www.example.com", "http://subdomain.example.org/pageLinks"],
@@ -11,9 +13,10 @@ let urlRegex = /https?:\/\/[a-zA-Z]+\.example\.[a-zA-Z]+(\/[a-zA-Z]+)?/g
 let pnum = /\(?\d{3,}\)?(\s|\.|-)\d{3,}(-|.)\d{4,}/g
 let ccn = /\d{4,}(\s|-)\d{4,}(\s|-)\d{4,}(\s|-)\d{4,}/g
 let htmlRegex = /<[^>]+>/g
+// loop used to start an iteration
 for (key in str) {
     console.log(`the matches for ${key} are: \n`);
-// forEach(item =>...)}
+// forEach(item =>...)} used 
 str[key].forEach(item => {
     let matched;
     if (key === "HTML tags") {
