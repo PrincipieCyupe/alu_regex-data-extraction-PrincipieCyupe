@@ -54,6 +54,8 @@ Matches for Credit Card Numbers:
 
 Matches for HTML Tags:
 [ '<p>', '<div class="example">', '<img src="image.jpg" alt="description">' ]
+```
+
 🛠️ How to Run the Code
 1️⃣ Clone the Repository
 git clone https://github.com/PrincipieCyupe/alu_regex-data-extraction-PrincipieCyupe.git
